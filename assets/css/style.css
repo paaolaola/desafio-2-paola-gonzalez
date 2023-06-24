@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Bruno+Ace&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Baloo 2", "sans-serif";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% 1fr 5%;
+}
+
+header {
+    grid-area: header;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Bruno Ace", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(10, 44, 113);
+}
+
+img {
+    width: 350px;
+}
+
+main {
+    grid-area: main;
+    padding: 5rem;
+    background: white;
+    border-left: 1px solid black;
+}
+
+aside {
+    grid-area: aside;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background: rgb(13, 31, 67);
+    border-top: 1px solid black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.gallery .card {
+    border: 1px solid rgb(183, 183, 183);
+}
+.gallery .card-content {
+    text-align: start;
+    word-spacing: 10px;
+    padding-right: 1rem;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.gallery p {
+    padding: 5px;
+}
+.gallery .card img {
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(1);
+}
+
+.gallery .card img:hover {
+    filter: contrast(1.1);
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.tittle {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(23, 23, 23);
+}
+
+aside ul li {
+    list-style: none;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+aside li a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+button {
+    padding: 1rem 3rem;
+    margin: 1rem;
+    background: rgb(13, 31, 67);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+h4 {
+    color: rgb(233, 233, 233);
+}
+
+.footer-text {
+    color: rgb(182, 182, 182);
+    padding-top: 10px;
+}
